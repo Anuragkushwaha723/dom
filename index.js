@@ -1,10 +1,11 @@
+// let list1=document.getElementsByTagName('li');
+let list2=document.getElementsByClassName('list-group-item');
 
-let items=document.getElementsByClassName('list-group-item');
-items[1].textContent="Hello";
-items[1].style.fontWeight="bold";
-items[1].style.backgroundColor='yellow';
-items[2].style.backgroundColor='green';
-for (let i = 0; i <items.length; i++) {
-    items[i].style.fontWeight = "bold";
-    items[i].style.color = "blue";
+
+// for(var i=0;i<list1.length;i++){
+//     list1[i].style.backgroundColor = "red";
+// }
+
+for(var i=0;i<list2.length;i++){
+    list2[i].style.backgroundColor = "red";
 }
