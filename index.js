@@ -1,11 +1,13 @@
-// let list1=document.getElementsByTagName('li');
-let list2=document.getElementsByClassName('list-group-item');
+// let list=document.querySelector('.list-group-item:nth-child(2)');
+// let list1=document.querySelector('.list-group-item:nth-child(3)');
+// list.style.backgroundColor='green';
+// list1.style.visibility='hidden';
 
-
-// for(var i=0;i<list1.length;i++){
-//     list1[i].style.backgroundColor = "red";
-// }
-
-for(var i=0;i<list2.length;i++){
-    list2[i].style.backgroundColor = "red";
+var itemsList=document.querySelectorAll('li');
+console.log(itemsList[1].innerHTML);
+itemsList[1].style.color='green';
+var odd=document.querySelectorAll('li:nth-child(odd)');
+for (let i = 0; i <odd.length; i++) {
+    odd[i].style.backgroundColor='green';
+    
 }
